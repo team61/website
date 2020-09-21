@@ -1,5 +1,6 @@
 .header {
   background-color: rgba(255, 255, 255, 0.315);
+  margin: 100px 30px;
   .overlay {
     background: $primary;
     overflow: hidden;
@@ -11,7 +12,7 @@
   }
   @media screen and (min-width: 1024px) {
     img {
-      height: 420px;
+      max-height: 30rem;
     }
   }
   .content {
@@ -19,15 +20,20 @@
     margin: auto;
     padding: 100px 0;
     width: 50%;
-    h1 {
-      font-size: 3em;
-    }
+
     color: rgb(0, 0, 0);
   }
 }
 
 #btn-sign-up {
-  font-size: 1.5em;
+  font-size: 2rem;
   border-width: 2px;
   font-weight: bold;
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    width: 70%;
+    margin: 50px auto;
+  }
 }

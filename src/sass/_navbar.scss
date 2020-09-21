@@ -14,17 +14,18 @@
   }
   .navbar-brand {
     display: inline;
-    font-size: 1.7em;
+
     color: white;
     img {
-      height: 3rem;
-      width: 3rem;
+      height: 4.5rem;
+      width: 4.5rem;
       transition: height 0.3s ease-in-out;
       margin-right: 8px;
     }
     h2 {
       color: white;
-      padding: 6px;
+      padding: 8px;
+      font-size: 2.8rem;
     }
   }
 
@@ -82,6 +83,9 @@
       background-color 0.5s, box-shadow 0.5s;
 
     .navbar-nav .nav-item {
+      .nav-link {
+        font-size: 1.5rem;
+      }
       margin-right: 1rem;
       &:last-child {
         margin-right: 0;
