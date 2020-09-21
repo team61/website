@@ -8,11 +8,15 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 h1 {
-  font-size: 2.5em;
+  font-size: 2.7em;
 }
 h2 {
-  font-size: 1.6em;
+  font-size: 2.3em;
   color: rgb(70, 70, 70);
+}
+
+h4 {
+  font-size: 2em;
 }
 
 .main-title {
@@ -23,24 +27,24 @@ h2 {
 
 p {
   color: rgb(65, 65, 65);
-  font-size: 1.3em;
+  font-size: 1.8em;
 }
 
 .date {
-  font-size: 1em;
+  font-size: 1.4em;
   font-style: italic;
   color: rgb(80, 80, 80);
 }
 
 .line {
-  width: 150px;
+  width: 200px;
   height: 3px;
   display: block;
   background-color: $primary;
 }
 
 .navbar-margin {
-  margin-top: 125px;
+  margin-top: 12em;
 }
 
 img {

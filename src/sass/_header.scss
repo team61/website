@@ -7,13 +7,17 @@
   img {
     width: 100%;
     opacity: 0.7;
-    height: 420px;
     object-fit: cover;
+  }
+  @media screen and (min-width: 1024px) {
+    img {
+      height: 420px;
+    }
   }
   .content {
     text-align: center;
     margin: auto;
-    padding-top: 100px;
+    padding: 100px 0;
     width: 50%;
     h1 {
       font-size: 3em;

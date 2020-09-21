@@ -1,12 +1,25 @@
 .section {
   padding: 0px 80px;
+  text-align: center;
   img {
     width: 220px;
+    margin: 0 auto;
+    display: block;
     height: 220px;
     border-radius: 50%;
     border: 2px solid white;
   }
   h4 {
+    margin-top: 1em;
     font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .section {
+    text-align: start;
+    h4 {
+      margin-top: 0;
+    }
   }
 }
