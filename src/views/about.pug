@@ -1,0 +1,45 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  title Team 61 | About
+body
+  nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top.shadow-lg
+    .container
+      a.navbar-brand(href="about.html").d-flex
+        img(src="../images/logo.png")
+        h2 Team 61
+      button#nav-toggle-btn.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarResponsive.collapse.navbar-collapse
+        ul.navbar-nav.ml-auto
+          li.nav-item
+            a.nav-link(href="index.html") Home
+              .hover-border
+          li.nav-item
+            a.nav-link(href="about.html").active About
+              .hover-border
+          li.nav-item
+            a.nav-link(href="news.html") News
+              .hover-border
+          li.nav-item
+            a.nav-link(href="blog.html") Blog
+              .hover-border
+  .container.page.shadow-lg.navbar-margin
+    .row.justify-content-center
+      .col-md-10
+        h1.text-center Our Mission
+        .line.mx-auto
+        p.mt-3.text-center
+            | To order to positively influence and inspire our community, peers,
+            | and younger students, as well as teach them about the impact their
+            | work could have on the future, BVT Robotics plans to spread our
+            | knowledge about science, engineering, and technology to through
+            | exciting mentor-based programs and foster well-rounded life
+            | capabilities including self-confidence, interpersonal communication
+            | skills, and leadership development.
+.loader-wrapper
+  span.loader
+    span.loader-inner
+      
+    
