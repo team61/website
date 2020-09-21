@@ -20,6 +20,7 @@ module.exports = merge(common, {
       new HtmlWebpackPlugin({
         filename: "index.html",
         template: "./src/views/index.pug",
+        chunks: ["index", "index_head"],
         minify: {
           removeAttributeQuotes: true,
           collapseWhitespace: true,
