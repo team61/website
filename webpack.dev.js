@@ -19,8 +19,8 @@ module.exports = merge(common, {
       template: "./src/views/about.pug",
     }),
     new HtmlWebpackPlugin({
-      filename: "news.html",
-      template: "./src/views/news.pug",
+      filename: "updates.html",
+      template: "./src/views/updates.pug",
     }),
     new HtmlWebpackPlugin({
       filename: "blog.html",

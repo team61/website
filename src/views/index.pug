@@ -4,66 +4,76 @@ head
   meta(http-equiv='X-UA-Compatible' content='ie=edge')
   title Team 61 | Home
 body
-  
-  nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top.shadow-lg
-    .container
-      a.navbar-brand(href="about.html").d-flex
-        img(src="../images/logo.png")
-        h2 Team 61
-      button#nav-toggle-btn.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
-        span.navbar-toggler-icon
-      #navbarResponsive.collapse.navbar-collapse
-        ul.navbar-nav.ml-auto
-          li.nav-item
-            a.nav-link(href="index.html").active Home
-              .hover-border
-          li.nav-item
-            a.nav-link(href="about.html") About
-              .hover-border
-          li.nav-item
-            a.nav-link(href="news.html") News
-              .hover-border
-          li.nav-item
-            a.nav-link(href="blog.html") Blog
-              .hover-border
-      
-  .container-fluid.navbar-margin
-    .header.shadow-lg
-      .row
-        .col-lg-6
-          .overlay
-            img(src="../images/robot.jpg")
-        .col-lg-6
-          .content
-            h1 Join
-            h1 Robotics
-            a#btn-sign-up.btn.btn-outline-primary.mt-4(href="https://forms.office.com/Pages/ResponsePage.aspx?id=5ZZ7pcwnuk6gCaZnbYRgkryBno2G4PpIrx8KqIhuABJUQUwzTEZUVk5OUUs0N0dMSjg1RDhWNDVJVC4u" target="_blank") Sign Up
   .container-fluid
-    .page.shadow-lg.mt-5
-      h1.text-center Announcements
-      .line.mx-auto
-      h6.text-center.mt-2.date Last Updated: 9/20/2020
-      .row.justify-content-center.mt-4.section
-          .col-lg-3
-              img(src="../images/robot.jpg").shadow-lg
-          .col-lg-9
-              .ml-4.p-3
-                  h4 First Updates
-                  p
-                      | Since last's year competition was canceled due to coronavirus, FIRST organizers decided to
-                      | make next year's competition the same one but with a twist. What this means for us is that throughout the
-                      | fall and first half of winter, we
-                      | will be improving the robot any way we can.
-      .row.justify-content-center.mt-5.section
-          .col-lg-3
-              img(src="../images/meeting.jpg").shadow-lg
-          .col-lg-9
-              .ml-4.p-3
-                  h4 Weekly Zoom Meetings
-                  p
-                      | There will be a zoom meeting for robotics at September 9th, 10:30 AM. The meeting will go
-                      | over the various projects and activities that the club will be working on in the fall. We will also go over our
-                      | distance learning plans to teach underclassmen.
+  .row
+    .col-lg-8.m-auto
+      .container-fluid
+        .row
+          .col-lg-3.col-sm-8.m-auto
+            img(src="../images/logo.png").logo
+        .row.mt-5
+          .col-12
+            nav#mainNav.navbar.navbar-expand-lg.navbar-dark.shadow-lg
+              .container
+                button#nav-toggle-btn.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                  span.navbar-toggler-icon
+                #navbarResponsive.collapse.navbar-collapse
+                  ul.navbar-nav.m-auto
+                    li.nav-item
+                      a.nav-link(href="index.html").active Home
+                        .hover-border
+                    li.nav-item
+                      a.nav-link(href="about.html") About
+                        .hover-border
+                    li.nav-item
+                      a.nav-link(href="updates.html") Updates
+                        .hover-border
+                    li.nav-item
+                      a.nav-link(href="blog.html") Blog
+                        .hover-border
+                    li.nav-item
+                      a.nav-link(href="https://mandrillapp.com/track/click/31026808/www.countrymeats.com?p=eyJzIjoiUmJtc09tV2NTX1hSNThRb2FMRF9vMnlIc2ZRIiwidiI6MSwicCI6IntcInVcIjozMTAyNjgwOCxcInZcIjoxLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL3d3dy5jb3VudHJ5bWVhdHMuY29tXFxcL2Z1bmRyYWlzZXJcXFwvYmxhY2tzdG9uZS12YWxsZXktcmVnaW9uYWwtaC1zLVwiLFwiaWRcIjpcImZkNWVkZGYzNGNhZDQ2YTVhMjNiYThhYzBiOTdlOTk3XCIsXCJ1cmxfaWRzXCI6W1wiMzE4YTM1NDdjOGNjOTZjMzkwYzczMWQ5NGIwMDBkNDQyZDg5MTIyNlwiXX0ifQ" target="blank") Meatsticks
+                        .hover-border
+        .row.mt-5
+          .col-12
+            .container-fluid.header.p-0.shadow
+              .row
+                .col-lg-6
+                  .overlay
+                    img(src="../images/event.jpg")
+                .col-lg-6
+                  .content
+                    h1 Join Robotics!
+                    h4.mt-3 and let us shoot
+                    h4 for the stars together
+                    a#btn-sign-up.btn.btn-outline-primary.mt-4(href="https://forms.office.com/Pages/ResponsePage.aspx?id=5ZZ7pcwnuk6gCaZnbYRgkryBno2G4PpIrx8KqIhuABJUQUwzTEZUVk5OUUs0N0dMSjg1RDhWNDVJVC4u" target="_blank") Sign Up
+      
+      .container-fluid
+        .page.shadow.mt-5.pb-5.mb-5
+          h1.text-center.pt-5 Announcements
+          .line.mx-auto
+          h6.text-center.mt-2.date Last Updated: 9/20/2020
+          .row.justify-content-center.mt-4.section
+              .col-lg-3
+                  img(src="../images/robot.jpg").shadow
+              .col-lg-9
+                  .ml-4.p-3
+                      h4 First Updates
+                      p
+                          | Since last's year competition was canceled due to coronavirus, FIRST organizers decided to
+                          | make next year's competition the same one but with a twist. What this means for us is that throughout the
+                          | fall and first half of winter, we
+                          | will be improving the robot any way we can.
+          .row.justify-content-center.mt-5.section
+              .col-lg-3
+                  img(src="../images/meeting.jpg").shadow
+              .col-lg-9
+                  .ml-4.p-3
+                      h4 Weekly Zoom Meetings
+                      p
+                          | There will be a zoom meeting for robotics at September 9th, 10:30 AM. The meeting will go
+                          | over the various projects and activities that the club will be working on in the fall. We will also go over our
+                          | distance learning plans to teach underclassmen.
 .loader-wrapper
     span.loader
       span.loader-inner
