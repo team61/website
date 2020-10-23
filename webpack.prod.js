@@ -56,7 +56,7 @@ module.exports = merge(common, {
     ],
   },
   plugins: [
-    new CleanWebpackPlugin(),
+     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({ filename: "[name].[contentHash].css" }),
    
   ],
@@ -65,10 +65,8 @@ module.exports = merge(common, {
       {
         test: /\.scss$/,
         use: [
-          {
-            loader: "style-loader",
-            options: { injectType: "singletonStyleTag" },
-          },
+          MiniCssExtractPlugin.loader,
+ 
           "css-loader",
           "sass-loader",
         ],
