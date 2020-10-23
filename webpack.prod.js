@@ -36,8 +36,8 @@ module.exports = merge(common, {
         },
       }),
       new HtmlWebpackPlugin({
-        filename: "news.html",
-        template: "./src/views/news.pug",
+        filename: "updates.html",
+        template: "./src/views/updates.pug",
         minify: {
           removeAttributeQuotes: true,
           collapseWhitespace: true,
