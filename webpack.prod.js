@@ -56,8 +56,9 @@ module.exports = merge(common, {
     ],
   },
   plugins: [
-    new MiniCssExtractPlugin({ filename: "[name].[contentHash].css" }),
     new CleanWebpackPlugin(),
+    new MiniCssExtractPlugin({ filename: "[name].[contentHash].css" }),
+   
   ],
   module: {
     rules: [
