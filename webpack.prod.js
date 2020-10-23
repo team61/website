@@ -43,16 +43,7 @@ module.exports = merge(common, {
           collapseWhitespace: true,
           removeComments: true,
         },
-      }),
-      new HtmlWebpackPlugin({
-        filename: "blog.html",
-        template: "./src/views/blog.pug",
-        minify: {
-          removeAttributeQuotes: true,
-          collapseWhitespace: true,
-          removeComments: true,
-        },
-      }),
+      })
     ],
   },
   plugins: [

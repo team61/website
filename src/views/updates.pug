@@ -21,41 +21,16 @@ body
             a.nav-link(href="about.html") About
               .hover-border
           li.nav-item
-            a.nav-link(href="news.html").active News
-              .hover-border
-          li.nav-item
-            a.nav-link(href="blog.html") Blog
+            a.nav-link(href="updates.html").active Updates
               .hover-border
           li.nav-item
             a.nav-link(href="https://mandrillapp.com/track/click/31026808/www.countrymeats.com?p=eyJzIjoiUmJtc09tV2NTX1hSNThRb2FMRF9vMnlIc2ZRIiwidiI6MSwicCI6IntcInVcIjozMTAyNjgwOCxcInZcIjoxLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL3d3dy5jb3VudHJ5bWVhdHMuY29tXFxcL2Z1bmRyYWlzZXJcXFwvYmxhY2tzdG9uZS12YWxsZXktcmVnaW9uYWwtaC1zLVwiLFwiaWRcIjpcImZkNWVkZGYzNGNhZDQ2YTVhMjNiYThhYzBiOTdlOTk3XCIsXCJ1cmxfaWRzXCI6W1wiMzE4YTM1NDdjOGNjOTZjMzkwYzczMWQ5NGIwMDBkNDQyZDg5MTIyNlwiXX0ifQ" target="blank") Meatsticks
               .hover-border
   .container-fluid.navbar-margin
-    .page.shadow-lg
-        h1.text-center Announcements
-        .line.mx-auto
-        h6.text-center.mt-2.date Last Updated: 9/20/2020
-        .row.justify-content-center.mt-4.section
-            .col-lg-3
-                img(src="../images/robot.jpg").shadow-lg
-            .col-lg-9
-                .ml-4.p-3
-                    h4 First Updates
-                    p
-                        | Since last's year competition was canceled due to coronavirus, FIRST organizers decided to
-                        | make next year's competition the same one but with a twist. What this means for us is that throughout the
-                        | fall and first half of winter, we
-                        | will be improving the robot any way we can.
-        .row.justify-content-center.mt-5.section
-            .col-lg-3
-                img(src="../images/meeting.jpg").shadow-lg
-            .col-lg-9
-                .ml-4.p-3
-                    h4 Weekly Zoom Meetings
-                    p
-                        | There will be a zoom meeting for robotics at September 9th, 10:30 AM. The meeting will go
-                        | over the various projects and activities that the club will be working on in the fall. We will also go over our
-                        | distance learning plans to teach underclassmen.
-    .loader-wrapper
-        span.loader
-            span.loader-inner
+    .row
+      .col-lg-8.m-auto
+        include announcements.pug
+  .loader-wrapper
+      span.loader
+          span.loader-inner
   

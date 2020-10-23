@@ -21,11 +21,7 @@ module.exports = merge(common, {
     new HtmlWebpackPlugin({
       filename: "updates.html",
       template: "./src/views/updates.pug",
-    }),
-    new HtmlWebpackPlugin({
-      filename: "blog.html",
-      template: "./src/views/blog.pug",
-    }),
+    })
   ],
   module: {
     rules: [
