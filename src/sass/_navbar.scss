@@ -1,6 +1,6 @@
 // Styling for the navbar
 #mainNav {
- 
+  padding: 0;
   background-color: rgb(44, 51, 59);
   .navbar-toggler {
     margin-left: auto;
@@ -16,14 +16,14 @@
 
     color: white;
     img {
-      height: 3.5rem;
-      width: 3.5rem;
+      height: 5rem;
+      width: 5rem;
       transition: height 0.3s ease-in-out;
       margin-right: 8px;
     }
     h2 {
       color: white;
-      padding: 8px;
+      padding-top: 1rem;
       font-size: 2rem;
     }
   }
@@ -37,7 +37,7 @@
         border-radius: 0;
         font-size: 2rem;
         font-weight: 400;
-        padding-bottom: 0;
+        padding: 0;
         color: rgba(255, 255, 255, 0.5);
         cursor: pointer;
         border-bottom: 3px solid transparent;
@@ -73,8 +73,6 @@
 
 @media screen and (min-width: 1024px) {
   #mainNav {
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
     border: none;
 
     box-shadow: none;

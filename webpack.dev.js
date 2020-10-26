@@ -21,6 +21,10 @@ module.exports = merge(common, {
     new HtmlWebpackPlugin({
       filename: "updates.html",
       template: "./src/views/updates.pug",
+    }),
+    new HtmlWebpackPlugin({
+      filename: "pictures.html",
+      template: "./src/views/pictures.pug",
     })
   ],
   module: {

@@ -1,0 +1,97 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  link(rel="icon" href="../images/logo.png")
+  title Team 61 | News
+body
+  nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top.shadow-lg
+    .container
+      a.navbar-brand(href="about.html").d-flex
+        img(src="../images/logo.png")
+        h2 Team 61
+      button#nav-toggle-btn.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarResponsive.collapse.navbar-collapse
+        ul.navbar-nav.ml-auto
+          li.nav-item
+            a.nav-link(href="index.html") Home
+              .hover-border
+          li.nav-item
+            a.nav-link(href="about.html") About
+              .hover-border
+          li.nav-item
+            a.nav-link(href="updates.html") Updates
+              .hover-border
+          li.nav-item
+            a.nav-link(href="pictures.html").active Pictures
+              .hover-border
+          li.nav-item
+            a.nav-link(href="https://mandrillapp.com/track/click/31026808/www.countrymeats.com?p=eyJzIjoiUmJtc09tV2NTX1hSNThRb2FMRF9vMnlIc2ZRIiwidiI6MSwicCI6IntcInVcIjozMTAyNjgwOCxcInZcIjoxLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL3d3dy5jb3VudHJ5bWVhdHMuY29tXFxcL2Z1bmRyYWlzZXJcXFwvYmxhY2tzdG9uZS12YWxsZXktcmVnaW9uYWwtaC1zLVwiLFwiaWRcIjpcImZkNWVkZGYzNGNhZDQ2YTVhMjNiYThhYzBiOTdlOTk3XCIsXCJ1cmxfaWRzXCI6W1wiMzE4YTM1NDdjOGNjOTZjMzkwYzczMWQ5NGIwMDBkNDQyZDg5MTIyNlwiXX0ifQ" target="blank") Meatsticks
+              .hover-border
+  .container-fluid.navbar-margin
+    .row
+      .col-lg-8.m-auto
+        .page.shadow.pb-5.mb-5.pl-4.pr-4
+            .container-fluid
+                .row 
+                    .col.col-12
+                        h1.text-center.pt-5 Pictures
+                        .line.mx-auto
+                        h6.text-center.mt-2.date Last Updated: 10/26/2020
+                .row.mt-5#gallery(data-toggle="modal" data-target="#exampleModal")
+                    .col.col-xs-12.col-sm-12.col-md-12.col-xl-3.mb-4
+                        .overlay.shadow(data-target="#carouselExample" data-slide-to="0")
+                            img(src="../images/event.jpg")
+                            h3 View Image
+                    .col.col-xs-12.col-sm-12.col-md-12.col-xl-3.mb-4
+                        .overlay.shadow(data-target="#carouselExample" data-slide-to="1")
+                            img(src="../images/robot.jpg")
+                            h3 View Image
+                    .col.col-xs-12.col-sm-12.col-md-12.col-xl-3.mb-4
+                        .overlay.shadow(data-target="#carouselExample" data-slide-to="2")
+                            img(src="../images/outreach.jpg")
+                            h3 View Image
+                    .col.col-xs-12.col-sm-12.col-md-12.col-xl-3.mb-4
+                        .overlay.shadow(data-target="#carouselExample" data-slide-to="3")
+                            img(src="../images/news-letter-img.jpg")
+                            h3 View Image
+                    .col.col-xs-12.col-sm-12.col-md-12.col-xl-3.mb-4
+                        .overlay.shadow(data-target="#carouselExample" data-slide-to="4")
+                            img(src="../images/meeting.jpg")
+                            h3 View Image
+    #exampleModal.modal.fade(tabindex='-1' role='dialog' aria-hidden='true')
+        .modal-dialog(role='document')
+            .modal-content
+                .modal-header
+                    button.close(type='button' data-dismiss='modal' aria-label='Close') &times;
+                .modal-body
+                    #carouselExample.carousel.slide(data-ride='carousel')
+                        ul.carousel-indicators
+                            li.active(data-target='#carouselExample' data-slide-to='0')
+                            li(data-target='#carouselExample' data-slide-to='1')
+                            li(data-target='#carouselExample' data-slide-to='2')
+                            li(data-target='#carouselExample' data-slide-to='3')
+                            li(data-target='#carouselExample' data-slide-to='4')
+                        .carousel-inner
+                            .carousel-item.active
+                                img.d-block.w-100(src='../images/event.jpg' alt='Event')
+                            .carousel-item
+                                img.d-block.w-100(src='../images/robot.jpg' alt='Robot')
+                            .carousel-item
+                                img.d-block.w-100(src='../images/outreach.jpg' alt='Outreach')
+                            .carousel-item
+                                img.d-block.w-100(src='../images/news-letter-img.jpg' alt='RobotHang')
+                            .carousel-item
+                                img.d-block.w-100(src='../images/meeting.jpg' alt='Meeting')
+                        a.carousel-control-prev(href='#carouselExample' data-slide='prev')
+                            span.carousel-control-prev-icon
+                        a.carousel-control-next(href='#carouselExample' data-slide='next')
+                            span.carousel-control-next-icon
+                .modal-footer
+                    button.btn.btn-secondary(type='button' data-dismiss='modal') Close
+
+  .loader-wrapper
+      span.loader
+          span.loader-inner
+  

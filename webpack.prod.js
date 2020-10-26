@@ -43,11 +43,20 @@ module.exports = merge(common, {
           collapseWhitespace: true,
           removeComments: true,
         },
-      })
+      }),
+      new HtmlWebpackPlugin({
+        filename: "pictures.html",
+        template: "./src/views/pictures.pug",
+        minify: {
+          removeAttributeQuotes: true,
+          collapseWhitespace: true,
+          removeComments: true,
+        },
+      }),
     ],
   },
   plugins: [
-     new CleanWebpackPlugin(),
+    new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({ filename: "[name].[contentHash].css" }),
    
   ],
