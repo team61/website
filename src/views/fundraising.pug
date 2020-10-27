@@ -1,0 +1,57 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  link(rel="icon" href="../images/logo.png")
+  title Team 61 | News
+body
+  nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top.shadow-lg
+    .container
+      a.navbar-brand(href="index.html").d-flex
+        img(src="../images/logo.png")
+        h2 Team 61
+      button#nav-toggle-btn.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarResponsive.collapse.navbar-collapse
+        ul.navbar-nav.ml-auto
+          li.nav-item
+            a.nav-link(href="index.html") Home
+              .hover-border
+          li.nav-item
+            a.nav-link(href="about.html") About
+              .hover-border
+          li.nav-item
+            a.nav-link(href="updates.html") Updates
+              .hover-border
+          li.nav-item
+            a.nav-link(href="pictures.html") Pictures
+              .hover-border
+          li.nav-item
+            a.nav-link.active(href="fundraising.html" target="blank") Fundraising
+              .hover-border
+  .container-fluid.navbar-margin
+    .row
+      .col-lg-8.m-auto
+        .container-fluid
+            .page.shadow.pb-5.mb-5.pl-4.pr-4
+                .row 
+                    .col.col-12
+                        h1.text-center.pt-5 Fundraising
+                        .line.mx-auto
+                        h6.text-center.mt-2.date Last Updated: 10/27/2020
+                .row.justify-content-center.mt-5.section
+                    .col.col-xs-12.col-sm-12.col-md-12.col-xl-3
+                        img(src="../images/meatsticks.jpg").shadow
+                    .col.col-xs-12.col-sm-12.col-md-12.col-xl-9
+                        .p-3
+                            h4 Meatsticks
+                            p
+                               | Due to COVID 19 pandemic, the club has adapted to allow meat sticks to be purchased and shipped online. 
+                               | This way, no human contact is necessary and a plus of being able to order them in the comfort of your own home. 
+                               | A portion of the sales of meat sticks goes to the robotics club so it helps a ton to order some.
+                            
+                            a(target="_blank" href="https://mandrillapp.com/track/click/31026808/www.countrymeats.com?p=eyJzIjoiUmJtc09tV2NTX1hSNThRb2FMRF9vMnlIc2ZRIiwidiI6MSwicCI6IntcInVcIjozMTAyNjgwOCxcInZcIjoxLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL3d3dy5jb3VudHJ5bWVhdHMuY29tXFxcL2Z1bmRyYWlzZXJcXFwvYmxhY2tzdG9uZS12YWxsZXktcmVnaW9uYWwtaC1zLVwiLFwiaWRcIjpcImZkNWVkZGYzNGNhZDQ2YTVhMjNiYThhYzBiOTdlOTk3XCIsXCJ1cmxfaWRzXCI6W1wiMzE4YTM1NDdjOGNjOTZjMzkwYzczMWQ5NGIwMDBkNDQyZDg5MTIyNlwiXX0ifQ").font-weight-bold Order Meatsticks here
+  .loader-wrapper
+      span.loader
+          span.loader-inner
+  

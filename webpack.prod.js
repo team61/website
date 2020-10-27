@@ -53,6 +53,15 @@ module.exports = merge(common, {
           removeComments: true,
         },
       }),
+      new HtmlWebpackPlugin({
+        filename: "fundraising.html",
+        template: "./src/views/fundraising.pug",
+        minify: {
+          removeAttributeQuotes: true,
+          collapseWhitespace: true,
+          removeComments: true,
+        },
+      }),
     ],
   },
   plugins: [
