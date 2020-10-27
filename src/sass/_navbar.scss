@@ -1,5 +1,7 @@
 // Styling for the navbar
 #mainNav {
+  position: fixed !important;
+  top: 0;
   padding: 0;
   background-color: rgb(44, 51, 59);
   .navbar-toggler {
