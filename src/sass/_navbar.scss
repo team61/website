@@ -18,8 +18,8 @@
 
     color: white;
     img {
-      height: 3.5rem;
-      padding-top: 4px;
+      height: 3.2rem;
+      padding-top: 12px;
       width: auto;
       transition: height 0.3s ease-in-out;
       margin-right: 1rem;
@@ -51,7 +51,7 @@
           bottom: 0;
           left: 50%;
           width: 0;
-          height: 3px;
+          height: 2px;
           background-color: $primary;
           transition: 0.4s;
         }
