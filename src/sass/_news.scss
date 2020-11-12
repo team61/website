@@ -29,3 +29,16 @@
     }
   }
 }
+
+@media screen and (min-width: 1400px) {
+
+  .section {
+    img {
+      width: 90%;
+    }
+    text-align: start;
+    h4 {
+      margin-top: 0;
+    }
+  }
+}
